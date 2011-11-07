@@ -85,7 +85,6 @@
 				RIGHT JOIN tbl_pages_types `pt` ON(`p`.id = `pt`.page_id)
 				WHERE `pt`.type = "xml"
 			');
-			var_dump($pages);
 			foreach($pages as $page) {
 				$page_url = URL . '/' . Administration::instance()->resolvePagePath($page['id']) . '/';
 				$options[] = array($page['id'], $page_url == $this->get('ping-url'), $page_url);
