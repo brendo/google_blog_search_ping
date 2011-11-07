@@ -126,7 +126,7 @@
 
 			// Catch the result, we don't really need it though.
 			$result = $g->exec();
-			Symphony::$Log->pushToLog(__('Google Blog Search API: ') . $result, E_USER_NOTICE, true);
+			if(isset(Symphony::$Log)) Symphony::$Log->pushToLog(__('Google Blog Search API: ') . $result, E_USER_NOTICE, true);
 			$info = $g->getInfoLast();
 
 			return $info['http_code'] == 200;
