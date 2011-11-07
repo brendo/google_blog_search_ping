@@ -65,7 +65,7 @@
 
 			// Monitor this section
 			$options = array();
-			$sectionManager = new SectionManager(Symphony::Engine());
+			$sectionManager = new SectionManager($this->_Parent);
 			$sections = $sectionManager->fetch();
 			foreach($sections as $section) {
 				$options[] = array($section->get('id'), $section->get('id') == $this->get('monitor-sections'), $section->get('name'));
