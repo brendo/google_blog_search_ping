@@ -17,9 +17,3 @@ This extension will track when new entries are created in a section and then pin
 ## Reference
 
 For more information about Google Blog Search Pinging API, [check it out](http://www.google.com/help/blogsearch/pinging_API.html)
-
-## Changelog
-
-*0.9* (7th November 2011)
-
-- Initial release

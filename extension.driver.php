@@ -58,7 +58,7 @@
 
 			$fieldset = new XMLElement('fieldset');
 			$fieldset->setAttribute('class', 'settings');
-			$fieldset->appendChild(new XMLElement('legend', 'Google Blog Search Pinging API'));
+			$fieldset->appendChild(new XMLElement('legend', __('Google Blog Search Pinging API')));
 
 			$group = new XMLElement('div');
 			$group->setAttribute('class', 'group');
@@ -98,7 +98,7 @@
 
 			$fieldset->appendChild($group);
 			$fieldset->appendChild(
-				new XMLElement('p', 'When new entries are created in the selected section, a request will be sent to Google with the Ping URL which should be an RSS, Atom or RDF feed.', array('class' => 'help'))
+				new XMLElement('p', __('When new entries are created in the selected section, a request will be sent to Google with the Ping URL which should be an RSS, Atom or RDF feed.'), array('class' => 'help'))
 			);
 
 			$wrapper->appendChild($fieldset);
